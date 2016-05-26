@@ -192,6 +192,10 @@ type=2
 * [Transactd download]
 (http://www.bizstation.jp/al/transactd/download/index.html)
 
+Nonlocking Replcopyのテストを行いたい場合は、1台のWindowsマシンに2つのMySQLイン
+スタンスとTransactdプラグインを3分で構築できる、[TransactdTestSrvSetup]
+(https://github.com/bizstation/TransactdTestSrvSetup)をお勧めします。
+
 また、以下を参照して、スクリプトを実行するホストにTransactd PHPクライアント
 3.4.1以上をインストールします。
 
