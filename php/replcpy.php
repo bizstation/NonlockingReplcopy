@@ -684,7 +684,6 @@ function copyTables($param, $master_dbs, $master_tables)
 		$dbname = dbnameFromUri($db_master->uri());
 		$db = prepareSlaveDatabase($param, $dbname);
 		echo "  [database : ".$dbname."]".PHP_EOL;
-		if ($isCopyView) copyViews($db, $db_master, $param);
 		assignDbDef($db, $db_master);
 		$dbdef = $db_master->dbDef();
 		for ($j = 1; $j <= $dbdef->tableCount(); ++$j)
@@ -693,6 +692,7 @@ function copyTables($param, $master_dbs, $master_tables)
 			copyTable($mastr_tb, $db);
 			++$tbaleIndex;
 		}
+		if ($isCopyView) copyViews($db, $db_master, $param);
 		$db->close();
 		unset($db);
 	}
