@@ -94,6 +94,7 @@ Slave_SQL_Running = Yes
 * サーバー全体コピーではmysqlデータベースは除外されます。だだし、mysqlデータベー
   スのみを指定したコピーは可能です。
 * tablesパラメータによるテーブル指定で、ビューは指定できません。
+* 現在のところMulti-source Replicationには対応していません。
 
 
 ## 使い方
