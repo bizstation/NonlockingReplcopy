@@ -203,7 +203,7 @@ Nonlocking Replcopyのテストを行いたい場合は、1台のWindowsマシンに2つのMySQLイン
 * [Transactd インストールガイド for PHP]
 (http://www.bizstation.jp/ja/transactd/documents/install_guide_php.html)
 
-`php/dreplcpy.php`をPHPが実行可能フォルダに保存します。
+`php/replcpy.php`をPHPの実行可能フォルダに保存します。
 
 `repl_config.ini`を編集してレプリケーションの設定を行ってください。
 
